@@ -1,0 +1,15 @@
+{
+  "namespace": "com.example.demo2",
+  "type": "record",
+  "name": "TransactionEventAvro",
+  "fields": [
+    {"name": "transactionID", "type": "string"},
+    {"name": "customerID", "type": "string"},
+    {"name": "accountNumber", "type": "string"},
+    {"name": "atmID", "type": "string"},
+    {"name": "atmAddress", "type": "string"},
+    {"name": "transactionAmount", "type": "double"},
+    {"name": "transactionType", "type": "string"},
+    {"name": "timestamp", "type": {"type": "long", "logicalType": "timestamp-millis"}}
+  ]
+}
